@@ -1,0 +1,108 @@
+.link{
+    font-size: 20px;
+    color: black;
+    transition: 1s;
+}
+
+.link:hover{
+
+    font-size: 25px;
+    color: chartreuse;
+}
+
+
+.link:active{
+    font-size: 30px;
+    color: red;
+    text-decoration:none;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.item:first-child{
+    font-size: 20px;
+    color: green;
+}
+
+.item:last-child{
+    font-size: 25px;
+    color: red;
+}
+
+.item:nth-child(3n+2){
+    font-size: 20px;
+    color: blue;
+}
+
+.item1:nth-child(even){
+    font-size: 20px;
+    color: blue;
+}
+
+.item1:nth-child(odd){
+    font-size: 25px;
+    color: green;
+}
+
+.input_text{
+    padding: 20px;
+    border-radius: 56px;
+    border: 1px solid red;
+}
+
+.input_text:focus{
+    color: greenyellow;
+    background-color: darkblue;
+    font-size: 30px;
+}
+
+.check{
+    display: none;
+}
+
+.check_label{
+    border: 1px solid black;
+    padding: 20px;
+    transition: 1s;
+    cursor:pointer;
+}
+
+.check:checked + .check_label{
+    background-color: yellow;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.arrow{
+    width: 100px;
+    height: 3px;
+    background-color: grey;
+    margin-bottom: 120px;
+}
+
+.arrow::before{
+    width: 20px;
+    height: 3px;
+    background-color: grey;
+    content: "";
+    display: block;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+    transform: rotate(45deg);
+}
+
+.arrow::after{
+    width: 20px;
+    height: 3px;
+    background-color: grey;
+    content: "";
+    display: block;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    transform: rotate(-45deg);
+}

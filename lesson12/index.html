@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action=""> <!-- Начало формы -->
+
+        <fieldset> <!-- Отделение одих input от других  -->
+            <legend>Почта</legend> <!-- Заголовок выделения -->
+            <input class="email" type="text" name="email" placeholder="Email" required> <!-- Поле для введения данных. placeholder отвечает за фантомный фоновый текст -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите одно значение</legend>
+            <label for="type1"><input type="radio" name="type" id="type1">1</label>
+            <label for="type2"><input type="radio" name="type" id="type2">2</label>  <!-- Тип input с выбором одного из значений. важно указать "name" у всех одинаковый -->
+            <label for="type3"><input type="radio" name="type" id="type3">3</label>  <!-- label отвечает за название ваших input -->
+        </fieldset>
+         
+        <fieldset>
+            <legend>Выберите несколько значений</legend>
+            <input type="checkbox" name="favorite_color"> green
+            <input type="checkbox" name="favorite_color"> red  <!-- Тип input с выбором нескольких значений из списка -->
+            <input type="checkbox" name="favorite_color"> blue
+        </fieldset>
+        
+        <fieldset>
+            <legend>Ваши пожелания</legend>
+            <textarea class="text" name="" id="" cols="30" rows="10"></textarea>  <!-- Текстовое поле для введения огромного кол-ва текста -->
+            <select name="year" id="">  <!-- Начало выпадающего списка -->
+                <option value="">2001</option>  <!-- Элементы выпадающего списка -->
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" name="submit" id="">   <!-- Кнопочка, которая отправляет ваши данные дальше, обновляя страницу со всей формой -->
+            <input type="button" value="Find"> <!-- Просто кнопочка -->
+            <input type="reset"> <!-- Обнуление всех введенных данных -->
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
